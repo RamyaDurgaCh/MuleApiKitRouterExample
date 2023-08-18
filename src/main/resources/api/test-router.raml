@@ -1,0 +1,29 @@
+#%RAML 1.0
+title: APIKitRouter-Example
+description: API kit router example which can show hwo it works when we generate flows from local file n the project
+baseUri: /{api}/version
+version: v1
+mediaType: [application/json]
+
+/health:
+  get:
+   responses:
+    200:
+     body:
+      application/json:
+       example: {"Status": "Running"}
+  
+/test:
+ get:
+  displayName: GET Test
+  description: Get method to test API kit router
+ post:
+   displayName: POST Test
+   description: POST method to test API kit router
+ put:
+   displayName: put Test
+   description: Put method to test API kit router
+ delete:
+   displayName: delete Test
+   description: Delete method to test API kit router
+ 
